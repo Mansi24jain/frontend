@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Registration form</title>
+    </head>
+    <body>
+        <h1>Register</h1>
+        <form action="http://www.google.com">
+         <label for="first">First Name: </label>
+         <input name="name" id="first" type="text" placeholder="John" required>
+        
+         <label for="last">Last Name: </label>
+         <input name="name" id="last" type="text" placeholder="Smith" required>
+         <div>
+         <label for="gender">Male</label>
+         <input name="radio-choice" id="gender" type="radio" value="choice-1">
+         
+         <label for="gender">Female</label>
+         <input name="radio-choice" id="gender" type="radio" value="choice-1">
+
+         <label for="gender">Other</label>
+         <input name="radio-choice" id="gender" type="radio" value="choice-1">
+         </div>
+         <label for="Email">Email:</label>
+         <input id="Email" type="email" placeholder="your email" required>
+
+         <label for="Password">Password:</label>
+         <input  name="Password" id="Password" type="password" pattern=".{5,10}" required title="5 to 10 characters">
+         
+         <div>
+          <label for="birthday">Birthday:</label>
+          <select name="select-choice" id="birthday" value="Choice+1">
+           <option value="Month">Month</option>
+           <option value="January">January</option>
+           <option value="February">February</option>
+           <option value="March">March</option>
+           <option value="April">April</option>
+           <option value="May">May</option>
+          </select>
+          <select name="birthday_day" id="birthday" value="day">
+           <option value="Day">Day</option>
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+           <option value="5">5</option>
+          </select>
+          <select name="birthday_year" id="birthday" value="Year">
+           <option value="Year">Year</option>
+           <option value="2000">2000</option>
+           <option value="2001">2001</option>
+           <option value="2002">2002</option>
+           <option value="2003">2003</option>
+           <option value="2004">2004</option>
+          </select>
+         </div>
+         <div> 
+             <label for="final">I agree to the terms and conditions</label>
+             <input id="final" type="checkbox" required>
+         </div>
+         <button> submit </button>
+        </form>
+    </body>
+</html>
